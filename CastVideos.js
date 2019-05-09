@@ -1401,26 +1401,6 @@ CastPlayer.prototype.initializeUI = function() {
     );
 
   document.getElementById("progress_indicator").draggable = true;
-
-  // Set up feature radio buttons
-  let noneRadio = document.getElementById("none");
-  noneRadio.onclick = function() {
-    ENABLE_ADS = false;
-    console.log("Features have been removed");
-  };
-  let adsRadio = document.getElementById("ads");
-  adsRadio.onclick = function() {
-    ENABLE_ADS = true;
-    console.log("Ads have been enabled");
-  };
-
-  if (ENABLE_ADS) {
-    adsRadio.checked = true;
-    console.log("Ads are enabled");
-  } else {
-    noneRadio.checked = true;
-    console.log("No features are enabled");
-  }
 };
 
 /**
