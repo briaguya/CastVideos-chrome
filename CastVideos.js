@@ -345,7 +345,6 @@ var PlayerHandler = function(castPlayer) {
  */
 CastPlayer.prototype.setupLocalPlayer = function() {
   // Cleanup remote player UI
-  this.removeAdMarkers();
   document.getElementById("skip").style.display = "none";
 
   var localPlayer = document.getElementById("video_element");
