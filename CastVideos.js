@@ -1318,9 +1318,6 @@ CastPlayer.prototype.initializeUI = function() {
     .getElementById("progress_indicator")
     .addEventListener("dragend", this.seekMediaListener);
   document
-    .getElementById("skip")
-    .addEventListener("click", this.skipAd.bind(this));
-  document
     .getElementById("audio_on")
     .addEventListener(
       "click",
